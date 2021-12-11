@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>connection</title>
+    <style>
+div.a{
+  text-align:center ;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+    </style>
+    
+</head>
+<body>
+<div class="a">
+    <h1>GET  Groovy - connection</h1> 
+    
+  </div> 
+  <form action="/submit" method="get">
+  <label >nom</label>
+  <input type="text" required minlength="3" maxlength="20" >
+  <p></p>
+  <label for="nom">prenom</label>
+  <input type="text" required minlength="3" maxlength="20" >
+  <p></p>
+  <label for="nom">date de naissance</label>
+  <input type="date" name="date" value="1990-01-01" min="1901-01-01" max="2000-01-01" >
+  <p></p>
+  <label for="nom">@mail</label>
+  <input type="email" multiple >
+  <p></p> 
+  <label for="phone">Enter your phone number:</label>
+
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}"
+       required>
+
+<small>Format: 12-345-678</small>
+  
+  <p>profession</p> 
+  <select multiple>
+    <option value="valeur-1">étudiant</option>
+    <option value="valeur-2">enseignant</option>
+    <option value="valeur-3">ingénieur</option>
+</select>
+  <button type="submit" formaction="/C:/Users/atefj/OneDrive/Bureau/04-12-2021/Nouveau dossier/td2/promotion.html">promotion</button>
+</form>
+   
+</body>
+</html>
